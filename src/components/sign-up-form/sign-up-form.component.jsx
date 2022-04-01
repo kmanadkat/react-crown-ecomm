@@ -19,10 +19,7 @@ const SignUpForm = () => {
 
 	const handleChange = event => {
 		const { value, id } = event.target
-		setFormFields(data => ({
-			...data,
-			[id]: value,
-		}))
+		setFormFields(data => ({ ...data, [id]: value }))
 	}
 
 	const resetFormFields = () => {
@@ -53,7 +50,7 @@ const SignUpForm = () => {
 
 	return (
 		<div className='sign-up-container'>
-			<h2>Don't have an account?</h2>
+			<h2>I do not have an account?</h2>
 			<span>Sign up with your email and password</span>
 			<form onSubmit={handleSubmit}>
 				<FormInput
