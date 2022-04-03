@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 import {
 	createAuthUserWithEmailPassword,
 	createUserDocumentFromAuth,
@@ -15,7 +15,7 @@ const defaultFormFields = {
 }
 
 const SignUpForm = () => {
-	const [formFields, setFormFields] = React.useState(defaultFormFields)
+	const [formFields, setFormFields] = useState(defaultFormFields)
 
 	const handleChange = event => {
 		const { value, id } = event.target
